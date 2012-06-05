@@ -95,3 +95,13 @@ log4j = {
 grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.dnb.foosball.User'
 grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.dnb.foosball.UserRole'
 grails.plugins.springsecurity.authority.className = 'com.dnb.foosball.Role'
+
+// Registration Configs
+grails.plugins.springsecurity.ui.register.postRegisterUrl = '/welcome'
+grails.plugins.springsecurity.ui.register.postResetUrl = '/reset'
+grails.plugins.springsecurity.ui.register.defaultRoleNames=['ROLE_USER']
+
+//mail server
+grails.mail.host=
+grails.mail.port=
+
