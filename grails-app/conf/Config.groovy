@@ -102,6 +102,6 @@ grails.plugins.springsecurity.ui.register.postResetUrl = '/reset'
 grails.plugins.springsecurity.ui.register.defaultRoleNames=['ROLE_USER']
 
 //mail server
-grails.mail.host=
-grails.mail.port=
+//grails.mail.host=
+//grails.mail.port=
 
