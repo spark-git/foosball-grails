@@ -102,6 +102,14 @@ grails.plugins.springsecurity.ui.register.postResetUrl = '/reset'
 grails.plugins.springsecurity.ui.register.defaultRoleNames=['ROLE_USER']
 
 //mail server
-//grails.mail.host=
-//grails.mail.port=
+grails.mail.disabled=true
+grails.mail.host="smtp.gmail.com"
+grails.mail.port=465
+grails.mail.username="grailsFoosball@gmail.com"
+grails.mail.password="grailsFoosball"
+grails.mail.props =["mail.smtp.auth":"true", 					   
+              "mail.smtp.socketFactory.port":"465",
+              "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+              "mail.smtp.socketFactory.fallback":"false",
+			  "mail.smtp.starttls.enable": "true"]
 

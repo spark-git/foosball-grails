@@ -2,14 +2,12 @@ import com.dnb.foosball.*
 class BootStrap {
 
     def init = { servletContext ->
-		def User basicUser = new User(username:"basic", password:"password", email:"oneill6p@dnb.com", enabled:true).save(flush:true)
-		def User adminUser = new User(username:"admin", password:"password", email:"oneil4lp@dnb.com", enabled:true).save(flush:true)
-		def User adminUser2 = new User(username:"admin", password:"password", email:"on6eillp@dnb.com", enabled:true).save(flush:true)
+		def User paulon = new User(username:"paulon", firstName:'Paul', lastName:'O\'Neill', password:"password123!", email:"oneillp@dnb.com", enabled:true).save(flush:true)
 		def Role userRole = new Role(authority:"ROLE_USER").save(flush:true)
 		def Role adminRole = new Role(authority:"ROLE_ADMIN").save(flush:true)
-		UserRole.create(adminUser, adminRole, true)
+		UserRole.create(paulon, adminRole, true)
 		
-		assert User.count() == 2
+		assert User.count() == 1
 		assert Role.count() == 2
 		assert UserRole.count() == 1
     }
