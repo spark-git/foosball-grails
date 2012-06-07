@@ -4,3 +4,5 @@ target-eclipse
 Servers
 *.settings
 *.log
+.classpath
+.project
