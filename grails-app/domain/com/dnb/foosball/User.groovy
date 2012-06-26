@@ -24,6 +24,7 @@ class User {
 		password blank: false, password:true
 		email blank: false, unique:true, email:true
 		rank blank: true,nullable: true,  display:false
+		
 	}
 
 	static mapping = {
