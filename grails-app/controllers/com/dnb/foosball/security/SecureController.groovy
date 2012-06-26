@@ -5,8 +5,8 @@ import grails.plugins.springsecurity.annotation.Authorities
 
 class SecureController {
 
-	@Authorities("everyone")
-    def index() {
+	@Authorities("anon")
+    def open() {
 		render 'not secured' 
 	}
 

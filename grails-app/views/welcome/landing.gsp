@@ -8,7 +8,7 @@
 <body>
   <div class="body">
   <g:render template="/layouts/header" />
-  <h2>Welcome!</h2>
+  <h2>Welcome!</h2>z
   </div>
 </body>
 </html>
