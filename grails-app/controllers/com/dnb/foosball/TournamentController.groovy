@@ -4,4 +4,7 @@ class TournamentController {
 
 	static scaffold = true
     
+	def constraints = {
+		startDate(display: false)
+	}
 }
