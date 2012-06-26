@@ -1,6 +1,6 @@
 package com.dnb.foosball
 
-class UserTournament {
+class Player {
 
 	User user
 	Tournament tournament
@@ -9,4 +9,8 @@ class UserTournament {
 		user blank: false
 		tournament blank: false
     }
+	
+	String toString(){
+		return user.toString()
+	}
 }

@@ -11,6 +11,7 @@
     <h2>Available Controllers:</h2>
     <ul>
       <li><g:link controller="Tournament">Tournament</g:link></li>
+      <li><g:link controller="Player" action="create">Register player to a tournament</g:link></li>
     </ul>
   </div>
 </body>

@@ -15,7 +15,7 @@ class User {
 	boolean accountLocked
 	boolean passwordExpired
 	
-	static hasMany = [tournaments: UserTournament]
+	static hasMany = [tournaments: Player]
 
 	static constraints = {
 		firstName blank: false
@@ -46,5 +46,9 @@ class User {
 
 	protected void encodePassword() {
 		password = springSecurityService.encodePassword(password)
+	}
+	
+	String toString(){
+		return "${firstName} ${lastName}"
 	}
 }
