@@ -14,6 +14,8 @@ class User {
 	boolean accountExpired
 	boolean accountLocked
 	boolean passwordExpired
+	
+	static hasMany = [tournaments: UserTournament]
 
 	static constraints = {
 		firstName blank: false

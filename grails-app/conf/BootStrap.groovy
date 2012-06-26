@@ -1,3 +1,5 @@
+import java.sql.Time;
+
 import com.dnb.foosball.*
 class BootStrap {
 
@@ -12,6 +14,9 @@ class BootStrap {
 		assert User.count() == 2
 		assert Role.count() == 2
 		assert UserRole.count() == 2
+		
+		def Tournament worldCupTournament = new Tournament(name: "World Cup", startDate: new Date(), deadlineDate: new Date(), ).save(flush:true)
+		assert 1 == Tournament.count()
     }
     def destroy = {
     }
