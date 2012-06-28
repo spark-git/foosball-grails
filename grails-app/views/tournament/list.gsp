@@ -29,6 +29,10 @@
 						<g:sortableColumn property="startDate" title="${message(code: 'tournament.startDate.label', default: 'Start Date')}" />
 					
 						<g:sortableColumn property="deadlineDate" title="${message(code: 'tournament.deadlineDate.label', default: 'Deadline Date')}" />
+            
+                        <th>Players</th>
+                        
+                        <th>Actions</th>
 					
 					</tr>
 				</thead>
@@ -41,6 +45,10 @@
 						<td><g:formatDate date="${tournamentInstance.startDate}" type="date" style="MEDIUM"/></td>
 					
 						<td><g:formatDate date="${tournamentInstance.deadlineDate}" type="datetime" style="MEDIUM" timeStyle="SHORT"/></td>
+            
+                        <td>${tournamentInstance.playersSize}</td>
+                        
+                        <td><g:link controller="player" action="create">Add Player</g:link></td>
 					
 					</tr>
 				</g:each>

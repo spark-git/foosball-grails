@@ -24,4 +24,8 @@ class Tournament {
 		return "${name} (${startDate})"
 	}
 	
+	int getPlayersSize(){
+		return players.size()
+	}
+	
 }
