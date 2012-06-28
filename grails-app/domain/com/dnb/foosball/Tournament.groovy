@@ -12,7 +12,7 @@ class Tournament {
 	
 	//TODO customise validation message, it doesn't pick up com.dnb.foosball.Tournament.startDate.min key
     static constraints = {
-		name blank: false, unique: true
+		name blank: false, uniqe: true
 		startDate blank: false, min: new Date()
 		deadlineDate blank: false, min: new Date()
 		players display: false 
